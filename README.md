@@ -5,6 +5,10 @@ A ~16-minute, 3Blue1Brown-style video explaining A. Yu. Kitaev's
 built with [Manim Community](https://www.manim.community/), a neural voice-over
 (Kokoro-82M via `kokoro-onnx`) and a procedurally generated ambient score.
 
+**Watch:** [`final/kitaev_majorana_1080p.mp4`](final/kitaev_majorana_1080p.mp4) (1080p60, 55 MB)
+or the lighter [`final/kitaev_majorana_720p.mp4`](final/kitaev_majorana_720p.mp4); subtitles are embedded
+and also in [`final/kitaev_majorana.srt`](final/kitaev_majorana.srt).
+
 Every curve on screen (band structures, zero-mode wavefunctions, the exponential
 splitting, Pfaffian signs) is computed live from the model in `src/physics.py`.
 
