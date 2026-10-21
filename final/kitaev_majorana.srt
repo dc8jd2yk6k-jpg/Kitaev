@@ -3,692 +3,692 @@
 Take a single electron. Now imagine you could cut it in half.
 
 2
-00:00:04,267 --> 00:00:12,041
+00:00:04,300 --> 00:00:12,074
 Not physically, of course. But mathematically, every electron
 can be written as two halves: two strange objects called
 
 3
-00:00:12,041 --> 00:00:13,227
+00:00:12,074 --> 00:00:13,260
 Majorana fermions.
 
 4
-00:00:13,667 --> 00:00:22,119
+00:00:13,700 --> 00:00:22,152
 Normally the two halves are glued together, sitting on the same
 atom. But in the year 2000, Alexei Kitaev wrote down a simple
 
 5
-00:00:22,119 --> 00:00:25,229
+00:00:22,152 --> 00:00:25,263
 model of a wire where the halves come unstuck,
 
 6
-00:00:25,667 --> 00:00:29,848
+00:00:25,700 --> 00:00:29,881
 and end up at opposite ends of the wire, as far apart as you
 like.
 
 7
-00:00:30,267 --> 00:00:38,395
+00:00:30,317 --> 00:00:38,445
 One electron's worth of quantum information, stored nowhere in
 particular. And that makes it remarkably hard to destroy.
 
 8
-00:00:38,800 --> 00:00:41,851
+00:00:38,883 --> 00:00:41,934
 This is the story of one short, beautiful paper.
 
 9
-00:00:45,400 --> 00:00:50,840
+00:00:45,483 --> 00:00:50,923
 To see why this matters, start with the problem Kitaev wanted to
 solve: quantum memory.
 
 10
-00:00:51,266 --> 00:00:58,136
+00:00:51,367 --> 00:00:58,236
 A qubit can be zero, one, or any superposition of the two. And
 it is fragile in two distinct ways.
 
 11
-00:00:58,533 --> 00:01:02,032
+00:00:58,683 --> 00:01:02,182
 A classical error, σˣ, flips zero into one.
 
 12
-00:01:02,466 --> 00:01:11,529
+00:01:02,617 --> 00:01:11,679
 A phase error, σᶻ, leaves the bits alone, but flips the sign of
 the one part relative to the zero part, quietly scrambling the
 
 13
-00:01:11,529 --> 00:01:12,536
+00:01:11,679 --> 00:01:12,686
 superposition.
 
 14
-00:01:12,933 --> 00:01:21,807
+00:01:13,133 --> 00:01:22,008
 Error-correcting codes can fix both, but only if every gate
 fails less than about once in ten thousand tries. In 2000, that
 
 15
-00:01:21,807 --> 00:01:23,322
+00:01:22,008 --> 00:01:23,523
 was far out of reach.
 
 16
-00:01:23,733 --> 00:01:27,488
+00:01:23,967 --> 00:01:27,721
 So Kitaev asked: can the physics itself do the protecting?
 
 17
-00:01:27,933 --> 00:01:34,418
+00:01:28,167 --> 00:01:34,652
 Here is a first idea. Let each qubit be a site that is either
 empty, or holds one electron.
 
 18
-00:01:34,866 --> 00:01:43,231
+00:01:35,100 --> 00:01:43,464
 Now a bit flip would mean creating or destroying an electron out
 of nothing. Charge conservation forbids that. Even in a
 
 19
-00:01:43,231 --> 00:01:49,992
+00:01:43,464 --> 00:01:50,225
 superconductor, where charge is only conserved modulo two, the
 parity, even or odd, is protected.
 
 20
-00:01:50,400 --> 00:01:57,643
+00:01:50,667 --> 00:01:57,910
 The only loophole is an electron hopping from one site to
 another, and that can be suppressed by putting the sites far
 
 21
-00:01:57,643 --> 00:01:59,914
+00:01:57,910 --> 00:02:00,181
 apart, with an energy gap in between.
 
 22
-00:02:00,333 --> 00:02:08,768
+00:02:00,617 --> 00:02:09,052
 But phase errors survive. Empty and full sites have different
 energies, so they pick up different phases. The operator a†a,
 
 23
-00:02:08,768 --> 00:02:14,392
+00:02:09,052 --> 00:02:14,675
 asking "is this site full?", is exactly a phase error, and
 nothing local stops it.
 
 24
-00:02:15,666 --> 00:02:23,303
+00:02:15,933 --> 00:02:23,571
 Here comes the mathematical trick. Each site has an annihilation
 operator a, and a creation operator a†.
 
 25
-00:02:23,732 --> 00:02:34,277
+00:02:24,017 --> 00:02:34,561
 Just as a complex number splits into a real and an imaginary
 part, we can split a in two. c₁ equals a plus a†. And c₂ equals
 
 26
-00:02:34,277 --> 00:02:35,892
+00:02:34,561 --> 00:02:36,177
 a minus a†, over i.
 
 27
-00:02:36,332 --> 00:02:45,014
+00:02:36,617 --> 00:02:45,299
 These are Majorana operators. Each one is its own antiparticle,
 c dagger equals c. Each squares to one, and different ones
 
 28
-00:02:45,014 --> 00:02:45,868
+00:02:45,299 --> 00:02:46,153
 anticommute.
 
 29
-00:02:46,266 --> 00:02:53,370
+00:02:46,600 --> 00:02:53,704
 Going backwards, a is c₁ plus i c₂, over two. Two Majoranas make
 one ordinary fermion.
 
 30
-00:02:53,799 --> 00:03:02,162
+00:02:54,150 --> 00:03:02,513
 Now rewrite the dangerous phase error, a†a. In Majoranas, it is
 one half, times one plus i c₁ c₂.
 
 31
-00:03:02,599 --> 00:03:10,934
+00:03:02,950 --> 00:03:11,285
 It needs both halves at once. If c₁ and c₂ lived on different,
 distant sites, this error would require them to interact, and
 
 32
-00:03:10,934 --> 00:03:12,412
+00:03:11,285 --> 00:03:12,763
 that could be avoided.
 
 33
-00:03:12,799 --> 00:03:21,115
+00:03:13,200 --> 00:03:21,516
 And a single Majorana can never appear alone in any physical
 Hamiltonian, because it would change the fermion parity. An
 
 34
-00:03:21,115 --> 00:03:25,066
+00:03:21,516 --> 00:03:25,467
 isolated Majorana is immune to every kind of local error.
 
 35
-00:03:25,466 --> 00:03:33,972
+00:03:25,917 --> 00:03:34,423
 The catch: Majoranas are not lying around in solids. The goal of
 the paper is to build a Hamiltonian where they emerge as low
 
 36
-00:03:33,972 --> 00:03:40,164
+00:03:34,423 --> 00:03:40,615
 energy degrees of freedom, and surprisingly, ordinary
 non-interacting electrons are enough.
 
 37
-00:03:40,599 --> 00:03:49,977
+00:03:41,050 --> 00:03:50,428
 The organizing idea is pairing. Any quadratic Hamiltonian can be
 written as i over four, times a sum of A l m, c l c m. Its
 
 38
-00:03:49,977 --> 00:03:57,068
+00:03:50,428 --> 00:03:57,519
 ground state pairs the Majoranas up. Usually all of them. But
 sometimes, a few are left over.
 
 39
-00:03:58,866 --> 00:04:07,079
+00:03:59,283 --> 00:04:07,497
 Kitaev's toy model is a chain of L sites, a quantum wire, lying
 on the surface of a three-dimensional superconductor.
 
 40
-00:04:07,466 --> 00:04:16,359
+00:04:07,933 --> 00:04:16,827
 Two ingredients are needed. First, superconductivity. The
 symmetry behind charge conservation, U one, must be broken down
 
 41
-00:04:16,359 --> 00:04:24,298
+00:04:16,827 --> 00:04:24,765
 to a simple sign flip, Z two. A Majorana mixes a with a dagger,
 so only a Z two symmetry can leave it alone.
 
 42
-00:04:24,732 --> 00:04:32,531
+00:04:25,200 --> 00:04:32,999
 Second, only one spin direction should be present. Think of
 spinless electrons. In a footnote, Kitaev notes that this takes
 
 43
-00:04:32,531 --> 00:04:36,146
+00:04:32,999 --> 00:04:36,613
 triplet, p-wave pairing in the superconductor underneath.
 
 44
-00:04:36,532 --> 00:04:43,338
+00:04:37,050 --> 00:04:43,855
 The Hamiltonian has three terms. The hopping, w, lets an
 electron jump between neighbouring sites.
 
 45
-00:04:43,732 --> 00:04:47,871
+00:04:44,300 --> 00:04:48,439
 The chemical potential, mu, sets the energy cost of filling a
 site.
 
 46
-00:04:48,266 --> 00:04:56,313
+00:04:48,883 --> 00:04:56,930
 And the superconducting pairing, delta, creates or destroys
 pairs of electrons on neighbouring sites. This is the term that
 
 47
-00:04:56,313 --> 00:04:58,079
+00:04:56,930 --> 00:04:58,697
 breaks charge conservation.
 
 48
-00:04:58,466 --> 00:05:04,311
+00:04:59,133 --> 00:05:04,979
 Now rewrite everything in Majoranas. Every site splits into a
 blue half and a gold half.
 
 49
-00:05:04,732 --> 00:05:12,905
+00:05:05,417 --> 00:05:13,589
 The chemical potential couples the two halves of the same site.
 Hopping and pairing combine into bonds between neighbours. w
 
 50
-00:05:12,905 --> 00:05:19,495
+00:05:13,589 --> 00:05:20,179
 plus delta couples each gold to the next blue, and delta minus w
 couples each blue to the next gold.
 
 51
-00:05:19,932 --> 00:05:22,215
+00:05:20,617 --> 00:05:22,899
 Now, let's look at two special cases.
 
 52
-00:05:23,398 --> 00:05:30,416
+00:05:24,133 --> 00:05:31,152
 Case one. No hopping, no pairing, and a negative chemical
 potential. Only the on-site term survives.
 
 53
-00:05:30,864 --> 00:05:39,149
+00:05:31,600 --> 00:05:39,885
 So each blue Majorana pairs with the gold partner on its own
 site. Every site is simply empty. It's boring, and completely
 
 54
-00:05:39,149 --> 00:05:39,760
+00:05:39,885 --> 00:05:40,496
 ordinary.
 
 55
-00:05:40,198 --> 00:05:48,313
+00:05:40,933 --> 00:05:49,049
 Case two. Set mu to zero, and make the hopping equal to the
 pairing. Now the on-site term vanishes, and so does the bond
 
 56
-00:05:48,313 --> 00:05:50,139
+00:05:49,049 --> 00:05:50,875
 from blue to the next gold.
 
 57
-00:05:50,531 --> 00:06:01,070
+00:05:51,317 --> 00:06:01,855
 What's left is H equals i w, times the sum of c₂ⱼ c₂ⱼ₊₁. Each
 gold Majorana pairs with the blue one on the next site.
 
 58
-00:06:01,464 --> 00:06:05,070
+00:06:02,300 --> 00:06:05,905
 The pairing has slid over by one. And now, look at the ends.
 
 59
-00:06:05,464 --> 00:06:13,272
+00:06:06,350 --> 00:06:14,158
 The very first Majorana, c₁, and the very last one, c₂L, appear
 nowhere in the Hamiltonian. They are unpaired.
 
 60
-00:06:13,664 --> 00:06:22,273
+00:06:14,600 --> 00:06:23,208
 Each bonded pair forms a new fermion, a tilde j, stretched
 across two sites and costing energy two w. The ground state
 
 61
-00:06:22,273 --> 00:06:24,096
+00:06:23,208 --> 00:06:25,032
 leaves all of them empty.
 
 62
-00:06:24,531 --> 00:06:33,380
+00:06:25,467 --> 00:06:34,316
 But the two leftovers, b prime and b double prime, form one more
 fermion mode, and it costs zero energy. So there are two ground
 
 63
-00:06:33,380 --> 00:06:37,459
+00:06:34,316 --> 00:06:38,395
 states, psi zero and psi one, with exactly the same energy.
 
 64
-00:06:37,864 --> 00:06:43,731
+00:06:38,833 --> 00:06:44,700
 They differ in fermion parity. One has an even number of
 electrons, the other an odd number.
 
 65
-00:06:44,131 --> 00:06:51,987
+00:06:45,150 --> 00:06:53,006
 Here's the subtle part. In the bulk, the two phases look
 identical. One is just a relabeling of the other, shifting every
 
 66
-00:06:51,987 --> 00:06:56,142
+00:06:53,006 --> 00:06:57,161
 Majorana over by one. Only at the ends does the difference show.
 
 67
-00:06:56,531 --> 00:07:04,062
+00:06:57,600 --> 00:07:05,131
 Or, as Kitaev puts it: you cannot cut a physical site in half.
 If you could, both kinds of boundary would be possible.
 
 68
-00:07:05,664 --> 00:07:14,561
+00:07:06,683 --> 00:07:15,580
 So here is our qubit. Empty or occupied, it lives in a single
 fermion mode built from two Majoranas at opposite ends of the
 
 69
-00:07:14,561 --> 00:07:14,922
+00:07:15,580 --> 00:07:15,942
 wire.
 
 70
-00:07:15,330 --> 00:07:24,170
+00:07:16,383 --> 00:07:25,223
 Try to read it locally. Noise near the left end can only touch b
 prime. But b prime alone changes parity, so it cannot appear in
 
 71
-00:07:24,170 --> 00:07:31,629
+00:07:25,223 --> 00:07:32,682
 any Hamiltonian. To learn anything, you need b prime times b
 double prime. You must touch both ends at once.
 
 72
-00:07:32,064 --> 00:07:40,409
+00:07:33,117 --> 00:07:41,462
 A bit flip needs a whole electron to appear or vanish. Parity
 forbids it. A phase error needs the two ends to talk. Distance
 
 73
-00:07:40,409 --> 00:07:42,496
+00:07:41,462 --> 00:07:43,549
 and the energy gap suppress it.
 
 74
-00:07:42,930 --> 00:07:51,283
+00:07:43,983 --> 00:07:52,336
 Both kinds of error are blocked, not by clever correction, but
 by geometry. This is what the abstract means by a qubit
 
 75
-00:07:51,283 --> 00:07:53,832
+00:07:52,336 --> 00:07:54,885
 intrinsically immune to decoherence.
 
 76
-00:07:54,264 --> 00:08:03,010
+00:07:55,333 --> 00:08:04,080
 But fine-tuned special points rarely survive in the real world.
 What happens away from w equals delta, and mu equals zero?
 
 77
-00:08:04,663 --> 00:08:13,690
+00:08:05,733 --> 00:08:14,760
 To find out, look at the bulk. In an infinite wire, an
 excitation with momentum q costs energy epsilon of q: the square
 
 78
-00:08:13,690 --> 00:08:19,682
+00:08:14,760 --> 00:08:20,752
 root of, two w cos q plus mu, squared, plus four delta squared,
 sine squared q.
 
 79
-00:08:20,130 --> 00:08:26,615
+00:08:21,200 --> 00:08:27,685
 Start in the case we just solved. There is a healthy gap: no
 excitations anywhere near zero energy.
 
 80
-00:08:27,063 --> 00:08:29,069
+00:08:28,133 --> 00:08:30,139
 Now raise mu. The gap shrinks,
 
 81
-00:08:29,463 --> 00:08:32,493
+00:08:30,583 --> 00:08:33,613
 and closes exactly when mu reaches two w.
 
 82
-00:08:33,063 --> 00:08:37,245
+00:08:34,183 --> 00:08:38,365
 Past that point, it opens again, but we are now in the trivial
 phase.
 
 83
-00:08:37,663 --> 00:08:45,535
+00:08:38,800 --> 00:08:46,672
 There is no way from one phase to the other without closing the
 gap. That is the hallmark of a topological phase transition.
 
 84
-00:08:45,930 --> 00:08:54,995
+00:08:47,117 --> 00:08:56,182
 Mapping it out: the phase with unpaired Majoranas fills the
 whole region where two w exceeds mu in size, as long as delta is
 
 85
-00:08:54,995 --> 00:08:58,431
+00:08:56,182 --> 00:08:59,618
 not zero. Everywhere else, the wire is trivial.
 
 86
-00:08:58,863 --> 00:09:07,282
+00:09:00,067 --> 00:09:08,485
 And along the line delta equals zero, inside that region, the
 wire is just a normal metal, with no gap at all. Pairing,
 
 87
-00:09:07,282 --> 00:09:09,829
+00:09:08,485 --> 00:09:11,032
 however weak, is what opens the gap.
 
 88
-00:09:11,063 --> 00:09:19,439
+00:09:12,267 --> 00:09:20,643
 Are the end Majoranas still there away from the sweet spot?
 Kitaev looks for zero energy modes built from powers of two
 
 89
-00:09:19,439 --> 00:09:21,410
+00:09:20,643 --> 00:09:22,613
 numbers, x plus and x minus.
 
 90
-00:09:21,797 --> 00:09:29,832
+00:09:23,050 --> 00:09:31,086
 In the trivial region, one root is larger than one, and the
 other smaller. A mode that decays from an edge cannot then
 
 91
-00:09:29,832 --> 00:09:33,850
+00:09:31,086 --> 00:09:35,103
 satisfy the boundary condition. So there are no zero modes.
 
 92
-00:09:34,263 --> 00:09:42,837
+00:09:35,550 --> 00:09:44,123
 In the topological region, both roots are smaller than one. b
 prime decays away from the left end, and b double prime from the
 
 93
-00:09:42,837 --> 00:09:43,245
+00:09:44,123 --> 00:09:44,531
 right.
 
 94
-00:09:43,663 --> 00:09:52,134
+00:09:44,967 --> 00:09:53,437
 Here are the real modes, found by diagonalizing a forty site
 chain. As mu creeps toward two w, they spread deeper into the
 
 95
-00:09:52,134 --> 00:09:54,842
+00:09:53,437 --> 00:09:56,145
 wire, but they stay pinned to the ends.
 
 96
-00:09:55,263 --> 00:10:04,680
+00:09:56,583 --> 00:10:06,000
 In a finite wire, the two tails overlap ever so slightly. That
 gives a tiny effective coupling: H effective equals i over two,
 
 97
-00:10:04,680 --> 00:10:06,698
+00:10:06,000 --> 00:10:08,018
 t, b prime, b double prime.
 
 98
-00:10:07,130 --> 00:10:16,331
+00:10:08,467 --> 00:10:17,667
 And t falls off exponentially with the length of the wire: t is
 proportional to e to the minus L over l zero. On a logarithmic
 
 99
-00:10:16,331 --> 00:10:18,010
+00:10:17,667 --> 00:10:19,347
 scale, a straight line.
 
 100
-00:10:18,397 --> 00:10:26,417
+00:10:19,783 --> 00:10:27,803
 Make the wire a few correlation lengths longer, and the
 splitting drops by orders of magnitude. This even survives weak
 
 101
-00:10:26,417 --> 00:10:33,223
+00:10:27,803 --> 00:10:34,610
 interactions: t is just the amplitude for a quasiparticle to
 tunnel the full length of a gapped wire.
 
 102
-00:10:34,530 --> 00:10:42,799
+00:10:35,867 --> 00:10:44,136
 Now Kitaev asks a deeper question. Forget the toy model. Given
 any gapped one-dimensional superconductor, how can you tell
 
 103
-00:10:42,799 --> 00:10:45,239
+00:10:44,136 --> 00:10:46,576
 whether it hosts unpaired Majoranas?
 
 104
-00:10:45,663 --> 00:10:54,840
+00:10:47,017 --> 00:10:56,193
 Define the Majorana number, M. It is minus one if there are
 unpaired Majoranas, and plus one if not. Two parallel chains can
 
 105
-00:10:54,840 --> 00:10:58,762
+00:10:56,193 --> 00:11:00,115
 pair their end Majoranas and cancel, so M multiplies.
 
 106
-00:10:59,197 --> 00:11:06,301
+00:11:00,550 --> 00:11:07,654
 Remarkably, you don't even need ends. Close the chain into a
 loop, and look at the parity of its unique ground state.
 
 107
-00:11:06,730 --> 00:11:13,130
+00:11:08,100 --> 00:11:14,500
 Take two loops, of lengths L₁ and L₂. Cut them open, and
 reconnect them into one big loop.
 
 108
-00:11:13,530 --> 00:11:22,340
+00:11:14,950 --> 00:11:23,760
 Wherever two ends meet, a coupling u fixes the sign of i b
 double prime b prime. Reconnecting swaps which end meets which,
 
 109
-00:11:22,340 --> 00:11:25,157
+00:11:23,760 --> 00:11:26,577
 and that costs exactly one factor of M.
 
 110
-00:11:25,597 --> 00:11:33,685
+00:11:27,017 --> 00:11:35,105
 So M is written into the bulk itself. For free fermions, the
 ground state parity is the sign of a Pfaffian: a square root of
 
 111
-00:11:33,685 --> 00:11:38,055
+00:11:35,105 --> 00:11:39,475
 a determinant, which remembers the sign that a determinant
 forgets.
 
 112
-00:11:38,463 --> 00:11:47,563
+00:11:39,917 --> 00:11:49,017
 Fourier transform the loop. Every momentum q pairs up with minus
 q, and each pair contributes a positive determinant. Only q
 
 113
-00:11:47,563 --> 00:11:51,306
+00:11:49,017 --> 00:11:52,759
 equals zero and q equals pi are their own partners.
 
 114
-00:11:51,730 --> 00:12:00,494
+00:11:53,200 --> 00:12:01,964
 The result: M equals the sign of the Pfaffian at zero, times the
 sign of the Pfaffian at pi. A topological invariant, read off
 
 115
-00:12:00,494 --> 00:12:03,485
+00:12:01,964 --> 00:12:04,955
 from just two points in the Brillouin zone.
 
 116
-00:12:03,930 --> 00:12:14,286
+00:12:05,400 --> 00:12:15,756
 For our chain, the Pfaffian at zero is minus mu minus two w. At
 pi, it is minus mu plus two w. Their product is negative exactly
 
 117
-00:12:14,286 --> 00:12:18,735
+00:12:15,756 --> 00:12:20,205
 when two w beats mu. The phase diagram falls right out.
 
 118
-00:12:19,997 --> 00:12:27,847
+00:12:21,467 --> 00:12:29,317
 When superconductivity is weak, this becomes beautifully simple.
 Turn off delta and look at the ordinary electron band.
 
 119
-00:12:28,263 --> 00:12:37,181
+00:12:29,767 --> 00:12:38,684
 M equals minus one, to the power nu of pi minus nu of zero. And
 that is just the number of Fermi points between zero and pi.
 
 120
-00:12:37,597 --> 00:12:46,002
+00:12:39,133 --> 00:12:47,539
 So count them. One Fermi point in each half of the Brillouin
 zone: odd. Add any small gap, and you get unpaired Majoranas.
 
 121
-00:12:46,397 --> 00:12:51,666
+00:12:47,983 --> 00:12:53,253
 Lower the band until it no longer crosses: zero Fermi points,
 even, trivial.
 
 122
-00:12:52,063 --> 00:13:00,703
+00:12:53,700 --> 00:13:02,340
 And here is why real materials make this hard. Electrons have
 spin. Spin up and spin down usually give identical bands, so
 
 123
-00:13:00,703 --> 00:13:04,031
+00:13:02,340 --> 00:13:05,668
 every Fermi point comes in a pair. Always even.
 
 124
-00:13:04,463 --> 00:13:13,326
+00:13:06,117 --> 00:13:14,979
 Each spin component counts separately. To get an odd number, the
 spin degeneracy must be lifted, which needs broken time reversal
 
 125
-00:13:13,326 --> 00:13:16,623
+00:13:14,979 --> 00:13:18,277
 symmetry. Spin-orbit coupling alone will not do.
 
 126
-00:13:17,063 --> 00:13:25,969
+00:13:18,717 --> 00:13:27,622
 Kitaev speculates that a magnetic field plus a charge density
 wave might gap out just one spin species, leaving an odd count
 
 127
-00:13:25,969 --> 00:13:26,471
+00:13:27,622 --> 00:13:28,125
 behind.
 
 128
-00:13:27,663 --> 00:13:33,530
+00:13:29,367 --> 00:13:35,233
 How could anyone actually see these Majoranas? The paper ends
 with a striking proposal.
 
 129
-00:13:33,930 --> 00:13:42,424
+00:13:35,683 --> 00:13:44,177
 Remember the superconducting phase, theta. The Majorana
 operators carry a factor e to the i theta over two. Wind theta
 
 130
-00:13:42,424 --> 00:13:45,663
+00:13:44,177 --> 00:13:47,417
 by two pi, and every Majorana flips its sign.
 
 131
-00:13:46,063 --> 00:13:54,333
+00:13:47,850 --> 00:13:56,119
 The Hamiltonian comes back to itself. The ground states don't,
 quite. The winding applies the operator V, minus i b prime b
 
 132
-00:13:54,333 --> 00:14:00,719
+00:13:56,119 --> 00:14:02,506
 double prime, which is equivalent to moving an electron from one
 end of the chain to the other.
 
 133
-00:14:01,130 --> 00:14:08,405
+00:14:02,950 --> 00:14:10,225
 Now build a Josephson junction out of the wire: two
 superconductors, with a phase difference theta between them.
 
 134
-00:14:08,797 --> 00:14:17,952
+00:14:10,667 --> 00:14:19,822
 Advance theta by two pi, and a single fermionic quasiparticle is
 carried to the junction. The Majoranas switch from psi zero to
 
 135
-00:14:17,952 --> 00:14:21,341
+00:14:19,822 --> 00:14:23,211
 psi one. The system is now on the other branch.
 
 136
-00:14:21,730 --> 00:14:30,875
+00:14:23,650 --> 00:14:32,795
 So the Josephson energy is two-valued, and the current is four
 pi periodic, instead of the usual two pi. A fingerprint of
 
 137
-00:14:30,875 --> 00:14:32,311
+00:14:32,795 --> 00:14:34,231
 unpaired Majoranas.
 
 138
-00:14:32,730 --> 00:14:41,276
+00:14:34,667 --> 00:14:43,212
 For a finite wire, the two branches almost cross at theta equals
 pi, split only by the tiny t. And the paper even sketches how
 
 139
-00:14:41,276 --> 00:14:47,109
+00:14:43,212 --> 00:14:49,045
 phase slips on a small island might be switched on and off to
 implement quantum gates.
 
 140
-00:14:48,397 --> 00:14:55,522
+00:14:50,300 --> 00:14:57,425
 That's the whole paper: sixteen pages, and a model its author
 called rather unrealistic. It launched a field.
 
 141
-00:14:55,930 --> 00:15:04,442
+00:14:57,867 --> 00:15:06,379
 A decade later, theorists showed how semiconductor nanowires,
 with strong spin-orbit coupling, a magnetic field, and a nearby
 
 142
-00:15:04,442 --> 00:15:13,022
+00:15:06,379 --> 00:15:14,959
 superconductor, could realize Kitaev's chain. Experiments ever
 since have hunted for its zero energy signatures, with exciting
 
 143
-00:15:13,022 --> 00:15:14,725
+00:15:14,959 --> 00:15:16,661
 hints, and lively debate.
 
 144
-00:15:15,130 --> 00:15:21,957
+00:15:17,100 --> 00:15:23,927
 Majorana based topological qubits remain one of the most
 ambitious routes to a quantum computer.
 
 145
-00:15:22,397 --> 00:15:26,407
+00:15:24,367 --> 00:15:28,377
 So, to recap. Split every electron into two Majoranas.
 
 146
-00:15:26,797 --> 00:15:29,506
+00:15:28,817 --> 00:15:31,526
 Pair them across sites, instead of within them.
 
 147
-00:15:29,930 --> 00:15:35,391
+00:15:31,967 --> 00:15:37,428
 Two halves are left stranded at the ends, sharing one qubit that
 no local noise can touch.
 
 148
-00:15:35,797 --> 00:15:42,367
+00:15:37,867 --> 00:15:44,437
 And whether a wire can do this is decided by a single sign, the
 Majorana number, hidden in its bulk.
 
 149
-00:15:42,797 --> 00:15:48,621
+00:15:44,883 --> 00:15:50,707
 Protection, not from engineering, but from topology. That is the
 beauty of Kitaev's idea.
